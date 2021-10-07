@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Web Service</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css"><!--Jahangir Alam-->
+</head>
+<body>
+    <div id="navbar" class="w3-bar w3-black w3-padding">
+        <span class="w3-bar-item w3-xlarge">ACME Web Service</span>
+        <span class="nav w3-right w3-large">
+            <div class="mobile-nav">
+            <a href="#slide-home" class=" w3-bar-item w3-btn  w3-hover-text-red w3-text-red">Home</a>
+            <a href="#about" class=" w3-bar-item w3-btn  w3-hover-text-red">About</a>
+            <a href="#service" class=" w3-bar-item w3-btn  w3-hover-text-red">Services</a>
+            <a href="#myHeader" class=" w3-bar-item w3-btn  w3-hover-text-red">Gallery</a>
+            <a href="#contact" class=" w3-bar-item w3-btn  w3-hover-text-red">Contact</a>
+        </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBar()">&#9776;</a>
+        </span>
+      </div> 
+      <div id="menu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium ">
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">About</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">Services</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">Gallery</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">Contact</a>
+      </div>
+      <!--start slideshow area-->
+      <section id="slide-home" class="slider">
+        <div class=" w3-display-container w3-opacity-min">
+            <img class="mySlides" src="img/slide-1.jpg" style="width:100%">
+            <img class="mySlides" src="img/slide-2.jpg" style="width:100%">
+            <img class="mySlides" src="img/slide-3.jpg" style="width:100%">
+            <div class="w3-container w3-display-middle w3-cenetr w3-light-grey w3-padding-24" style="z-index: 2;">
+                <h1 class="w3-center">GO ANYWHERE</h1>
+                <p class="w3-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis architecto non magnam quia iusto illo saepe similique voluptas. Reiciendis?</p>
+                <div class="w3-center w3-margin-top">
+                <button onclick="document.getElementById('modal').style.display='block'" class="w3-button w3-round w3-bar w3-large w3-red">Start Here</button>
+            </div>
+            </div>
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+      </section><!--end slider area-->
+      <!--start modal area-->
+        <div id="modal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top">
+                <header class="w3-container w3-red">
+                    <span onclick="document.getElementById('modal').style.display='none'"
+                    class="w3-button w3-display-topright w3-cloosebtn w3-xlarge">&times;</span>
+                    <h2>Get Started</h2>
+                </header>
+                <div class="w3-container">
+                    <form action="#">
+                        <label>Name</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name">
+                        <label>Username</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+                        <label>Password</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder=" Password">
+                        <label>Confirm Password</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Confirm Password">
+                        <button class="w3-button w3-black w3-block">Submit</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div><!--end modal area-->
+      <!--start section-one area-->
+      <section class="section w3-red w3-hover-opacity w3-padding-48">
+            <div class="w3-container w3-center">
+                <i class="fas fa-home w3-xxlarge"></i>
+                <h1>Welcome Home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit cupiditate sed voluptatibus eveniet deserunt error temporibus tempora non quasi?</p>
+            </div>
+      </section> <!--end section-one area-->
+      <!--start section-two area-->
+      <section class="section w3-light-grey  w3-padding-48">
+            <div class="w3-container w3-center">
+                <i class="fas fa-cog w3-xxlarge"></i>
+                <h1>Let's Begin</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit cupiditate sed voluptatibus eveniet deserunt error temporibus tempora non quasi?</p>
+            </div>
+      </section> <!--end section-two area-->
+       <!--start about area-->
+       <section id="about" class="section w3-padding-48">
+        <div class="w3-container">
+           <div class="w3-row-padding">
+               <div class="w3-col m5">
+                    <img class="w3-hover-sepia" src="img/slide-1.jpg" alt="">
+               </div>
+               <div class="w3-col m7">
+                    <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align w3-large">What We do </button>
+                    <div id="Demo1" class="w3-container w3-show">
+                        <h4>We Do It all</h4>
+                        <p class="w3-padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, odit sapiente! Eum reprehenderit numquam saepe quisquam, labore nihil eaque maxime porro tempore fuga? Eligendi amet magnam ullam nihil beatae consectetur corporis qui earum, dolore quo natus officiis voluptate aliquid corrupti facilis perspiciatis inventore accusantium maxime molestiae praesentium. Alias, harum doloremque?</p>
+                    </div>
+                    <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align w3-large w3-hover-red">What We Do <i class="fas fa-sort-down w3-xlarge"></i></button>
+                    <div id="Demo2" class="w3-container w3-hide">
+                        <h4>We Are Acme</h4>
+                        <p  class="w3-padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, odit sapiente! Eum reprehenderit numquam saepe quisquam, labore nihil eaque maxime porro tempore fuga? Eligendi amet magnam ullam nihil beatae consectetur corporis qui earum, dolore quo natus officiis voluptate aliquid corrupti facilis perspiciatis inventore accusantium maxime molestiae praesentium. Alias, harum doloremque?</p>
+                    </div>
+                    <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align w3-large w3-hover-red">What We Do <i class="fas fa-sort-down w3-xlarge"></i></button>
+                    <div id="Demo3" class="w3-container w3-hide">
+                        <h4>Are Everywhere</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, odit sapiente! Eum reprehenderit numquam saepe quisquam, labore nihil eaque maxime porro tempore fuga? Eligendi amet magnam ullam nihil beatae consectetur corporis qui earum, dolore quo natus officiis voluptate aliquid corrupti facilis perspiciatis inventore accusantium maxime molestiae praesentium. Alias, harum doloremque?</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+  </section> <!--end about section-->
+   <!--service heading area-->
+   <section id="service" class="section w3-red w3-hover-opacity w3-padding-48">
+    <div class="w3-container w3-center">
+        <h1 class="w3-text-shadow">OUR SERVICES</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit cupiditate sed voluptatibus eveniet deserunt error temporibus tempora non quasi?</p>
+    </div>
+</section> <!--end service heading area-->
+ <!--start service area-->
+<section class="section w3-light-grey w3-padding-48">
+    <div class="w3-container w3-center">
+        <div class="w3-row">
+            <div class="w3-col m3 w3-border w3-hover-opacity w3-padding-48 w3-round">
+                <i class="fas fa-comment w3-red w3-padding w3-xlarge w3-round-xlarge"></i>
+                <h3>Internet Marketing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, eius tenetur atque consequatur distinctio.<p>
+            </div>
+            <div class="w3-col m3 w3-border w3-hover-opacity w3-padding-48 w3-round">
+                <i class="fas fa-search w3-red w3-padding w3-xlarge w3-round-xlarge"></i>
+                <h3>Seo</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, eius tenetur atque consequatur distinctio.<p>
+            </div>
+            <div class="w3-col m3 w3-border w3-hover-opacity w3-padding-48 w3-round">
+                <i class="fas fa-cubes w3-red w3-padding w3-xlarge w3-round-xlarge"></i>
+                <h3>SoftWare Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, eius tenetur atque consequatur distinctio.<p>
+            </div>
+            <div class="w3-col m3 w3-border w3-hover-opacity w3-padding-48 w3-round">
+                <i class="fas fa-cloud w3-red w3-padding w3-xlarge w3-round-xlarge"></i>
+                <h3>Cloud Hosting</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, eius tenetur atque consequatur distinctio.<p>
+            </div>
+        </div>
+    </div>
+</section> <!--end service area-->
+ <!--service image area-->
+ <div class="header" id="myHeader">
+    <h1>Image Gallery</h1>
+    <button class="btn" onclick="one()">1</button>
+    <button class="btn active" onclick="two()">2</button>
+    <button class="btn" onclick="four()">4</button>
+  </div><!--end service heading area-->
+<!--start image gallery-->
+<section>
+    <div class="row w3-container">
+        <div class="row"> 
+            <div class="column">
+              <img src="img/slide-1.jpg" style="width:100%">
+              <img src="img/1.jpg" style="width:100%">
+              <img src="img/2.jpg" style="width:100%">
+              <img src="img/3-jpg.jpg" style="width:100%">
+              <img src="img/3-jpg.webp" style="width:100%">
+              <img src="img/4.jpg" style="width:100%">
+              <img src="img/5.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/6.jpg" style="width:100%">
+              <img src="img/7.jpg" style="width:100%">
+              <img src="img/8.jpg" style="width:100%">
+              <img src="img/9.jpg" style="width:100%">
+              <img src="img/slide-2.jpg" style="width:100%">
+              <img src="img/1.jpg" style="width:100%">
+            </div>  
+            <div class="column">
+              <img src="img/slide-3.jpg" style="width:100%">
+              <img src="img/1.jpg" style="width:100%">
+              <img src="img/2.jpg" style="width:100%">
+              <img src="img/7.jpg" style="width:100%">
+              <img src="img/5.jpg" style="width:100%">
+              <img src="img/slide-1.jpg" style="width:100%">
+              <img src="img/4.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/slide-1.jpg" style="width:100%">
+              <img src="img/slide-3.jpg" style="width:100%">
+              <img src="img/6.jpg" style="width:100%">
+              <img src="img/3-jpg.webp" style="width:100%">
+              <img src="img/7.jpg" style="width:100%">
+              <img src="img/slide-2.jpg" style="width:100%">
+            </div>
+          </div>
+      </div>
+      <br> <br>
+</section>
+<!--contact heading area-->
+<section id="contact" class="section w3-red w3-hover-opacity w3-padding-48">
+    <div class="w3-container w3-center">
+        <h1 class="w3-text-shadow">GET IN TOUCH</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit cupiditate sed voluptatibus eveniet deserunt error temporibus tempora non quasi?</p>
+    </div>
+</section> <!--end contact heading area-->
+<!--start contact area-->
+<section class="section">
+    <div class="w3-card-4 w3-margin-top">
+        <div class="w3-container w3-light-grey">
+            <h2>Contact Us</h2>
+        </div>
+        <form class="w3-container ">
+            <label class="w3-label">Name</label>
+            <input class="w3-input" type="text">
+            <label class="w3-label">Email</label>
+            <input class="w3-input" type="text">
+            <br>
+            <label class="w3-label">Message</label>
+            <textarea class="w3-input w3-border" style="resize: none;"></textarea>
+            <button type="button" class="w3-button w3-padding w3-padding w3-black w3-margin">Submit</button>
+        </form>
+        </div> 
+</section><!--end contact area-->
+<footer class="w3-container w3-black w3-padding-48 w3-block w3-left">
+    <div class="w3-row">
+        <div class="w3-col m3">
+            <h3>ACME Web Service</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis quasi exercitationem</p>
+            <br>
+            <i class="fab fa-facebook w3-red w3-padding w3-hover-black w3-large w3-round-xxlarge"></i>
+            <i class="fab fa-twitter w3-red w3-padding w3-hover-black w3-large w3-round-xxlarge"></i>
+            <i class="fab fa-whatsapp w3-red w3-padding w3-hover-black w3-large w3-round-xxlarge"></i>
+            <i class="fab fa-linkedin w3-red w3-padding w3-hover-black w3-large w3-round-xxlarge"></i>
+        </div>
+        <div class="w3-col m3">
+            <h3>Services</h3>
+            <div class="w3-bar-block">
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Internet Marketing</a>
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Seo</a>
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Software Development</a>
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Cloud Hostin</a>
+              </div> 
+        </div>
+        <div class="w3-col m3">
+            <h3>Useful Links</h3>
+            <div class="w3-bar-block">
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Home</a>
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">About</a>
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Services</a>
+                <a href="#" class="w3-bar-item w3-hover-text-red w3-btn">Gallery</a>
+              </div> 
+        </div>
+        <div class="w3-col m3">
+            <h3>Address</h3>
+            <p><i class="fas fa-search-location w3-large w3-text-light-grey w3-padding-small"></i>200, D-block, Green lane USA <br> <br>
+                <i class="fas fa-mobile w3-large w3-text-light-grey w3-padding-small"></i> +10 367 467 8934 <br> <br>
+                <i class="fas fa-envelope-open-text w3-large w3-text-light-grey w3-padding-small"></i>acme@contact.com</p>
+        </div>
+    </div>
+</footer>
+<div class="w3-container w3-center w3-dark-grey">
+    <p class="w3-padding-16">ACME Web Service &copy; 2021</p>
+</div>
+<script src="js/index.js"></script><!--Jahangir Alam-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+    event.preventDefault();
+
+    var hash = this.hash;
+
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+        window.location.hash = hash;
+    });
+    }
+});
+});
+</script> 
+</body>
+</html>

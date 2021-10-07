@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif
+}
+
+/* ======= slider area ========= */
+.nav{
+    margin-top:8px;
+}
+ .slider{
+    background: #333 !important;
+    z-index: 10;
+} 
+.slider img{
+    height:75vh;
+    object-fit: cover; 
+}
+.mySlides{
+    display:none;
+}
+.m5 img{
+   width:100%;
+}
+#navbar{
+    position: sticky;
+    top:0%;
+    z-index: 2;
+}
+footer p{
+    width:92%;
+}
+/* ======= image gallery ========= */
+.header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+ @media(max-width:600px) {
+     .mobile-nav{
+         display:none;
+     }
+ }
+
+
+
